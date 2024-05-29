@@ -377,7 +377,9 @@ strong {
   padding-bottom: 0;
   height: 100px;
 }
-
+.navbar .container{
+  background-color: #fff;
+}
 .navbar-brand {
   color: var(--primary-color);
   font-size: var(--h6-font-size);
