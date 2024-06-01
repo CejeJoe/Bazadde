@@ -3,6 +3,9 @@
   
   "use strict";
 
+    // Initiate the wowjs
+    new WOW().init();
+
     // COUNTER NUMBERS
     jQuery('.counter-thumb').appear(function() {
       jQuery('.counter-number').countTo();
