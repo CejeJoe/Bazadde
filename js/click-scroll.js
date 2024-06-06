@@ -9,12 +9,12 @@ $(document).ready(function() {
 
     // Define an array with paths and corresponding nav-link indices
     var pageLinks = [
-        { path: "index.html", index: 0 },
-        { path: "about.html", index: 1 },
-        { path: "works.html", index: 2 },
-        { path: "stories.html", index: 3 },
-        { path: "contact.html", index: 4 },
-        { path: "donate.html", index: 5 }
+        { path: "index", index: 0 },
+        { path: "about", index: 1 },
+        { path: "works", index: 2 },
+        { path: "stories", index: 3 },
+        { path: "contact", index: 4 },
+        { path: "donate", index: 5 }
     ];
 
     // Loop through the pageLinks array to find the active link
