@@ -5,42 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="">
-    <meta name="author" content="Collin Joe">
-    <link rel="icon" href="images/favicon.png">
+    <meta name="description" content="Bazadde Care offers vocational training to empower parents, enabling them to achieve self-sufficiency within two years. Support our cause to expand this life-changing program and provide basic healthcare to families in need.">
+    <meta name="keywords" content="Vocational training for parents, Parent empowerment program, Self-sufficiency training, Basic healthcare for families, Supporting parents in need, Bazadde Care initiative">
+    <meta name="author" content="Cedo developer">
 
     <title>Bazadde care</title>
 
     <!-- CSS FILES -->
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-    <link href="css/animate/animate.min.css" rel="stylesheet">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+  
 
 </head>
 
-<body id="section_1">
-    <div class="container-fluid px-0 topn">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href="https://www.facebook.com/HLK.familyempowerment/"><i class="bi bi-facebook"></i></a>
-                    <a class="btn btn-link text-light" href="https://www.youtube.com/watch?app=desktop&v=4aYRezpAPL8"><i class="bi bi-youtube"></i></a>
-                    <a class="btn btn-link text-light" href="https://www.instagram.com/HLKBAZADDECare"><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 d-inline-flex align-items-center text-white py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="bi bi-telephone me-2"></i>Call Us:</span>
-                    <a href="tell:+256772433957" class="text-white">+256 772 433957</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<body >
+
     <header >
     <nav class="navbar navbar-expand-lg shadow-lg">
         <div class="container">
@@ -57,19 +39,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
 
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="about.html" id="navbarLightDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" onclick="return false;">About</a>
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="about.html#volunteer">Volunteer</a></li>
+                        </ul>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link " href="about.html">About</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link " href="works.html">Our works</a>
+                        <a class="nav-link " href="works.html">Our work</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link " href="stories.html">Stories</a>
+                        <a class="nav-link " href="news.html">Update</a>
                     </li>
 
                    
@@ -79,7 +66,7 @@
                     </li>
 
                     <li class="nav-item ms-3">
-                        <a class="nav-link custom-border-btn btn donate" href="donate.html">Donate</a>
+                        <a class="nav-link custom-border-btn btn donate rounded" href="https://faithandlearning.org/projects/hlk-bazadde-care/#donor-form">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -97,36 +84,40 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="images/learning.png"
-                                        class="carousel-image img-fluid" alt="..." style="">
+                                        class="carousel-image img-fluid" alt="home"  data-aos="fade-left">
 
                                     <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        <h1>Bazadde <br>Care  Uganda</h1>
+                                      
+                                        <h1>Bazadde Care</h1>
 
-                                        <p>Non Government Organization registered in Uganda.</p>
+                                        <p>Nurturing Independence, Ensuring Support</p>
+                                      
                                     </div>
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img src="images/IMG-20240530-WA0050.jpg"
+                                    <img src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
                                         class="carousel-image img-fluid" alt="...">
 
                                     <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        <h1>Non-profit</h1>
+                                        <h1>Building </h1>
 
-                                        <p>Reg. No. INDR15888514NB</p>
+                                        <p>Self-Sufficient Families</p>
                                     </div>
                                 </div>
 
                                 <div class="carousel-item">
                                     <img src="images/aboutImg.png"
-                                        class="carousel-image img-fluid" alt="...">
+                                        class="carousel-image img-fluid" alt="home"  data-aos="fade-left">
 
                                     <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        <h1>Humanity</h1>
+                                       
+                                        <h1>Empowering</h1>
 
-                                        <p>Embrace Humanity: Together, We Make a Difference</p>
+                                        <p>Parents for Tomorrow.</p>
                                     </div>
                                 </div>
+                                <!-- <?php include slider.php;?> -->
                             </div>
 
                             <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
@@ -148,245 +139,128 @@
         </section>
         <div class="container-xxl py-5">
             <div class="container">
+                <h1  class="mb-4 text-center" style="font-size: 3rem;">Welcome to <br> Bazadde Care</h1>
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                        <p class="section-title bg-white text-start text-primary pe-3">Welcome!</p>
-                        <h1 class="mb-4" style="font-size: 4rem;">Welcome to <br> Bazadde Care</h1>
-                        <p class="mb-4" style="font-family: 'Open Sans',sans-serif; font-size: 20px;"><i> "Bazadde"</i> is a Luganda word that means <i>"one who cares"</i> or <i>"a parent"</i>. Bazadde Care is dedicated caring for parents, in other words, Parent Care!</p>
+                    <div data-aos="fade-down" class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        
+                        
+                        <p class="mb-4 fw-medium" style="font-family: 'Open Sans',sans-serif; font-size: 20px; ">
+                            We provided vocational training to parents, aiming to help them earn a self-sufficient income within two years.
+                             The trial was successful, so we expanded the program to more parents with little or no education. With your donations,
+                             we'll continue training and equipping parents to live self-sufficiently and care for their families, and also provide basic healthcare to some.
+                       
+                        </p>
+                        <p class="mb-4 fw-medium" style="font-family: 'Open Sans',sans-serif; font-size: 20px; ">
+                            <i> "Bazadde"</i> is a Luganda word that means <i>"one who cares"</i> or <i>"a parent"</i>. Bazadde Care is dedicated caring for parents, in other words, Parent Care!</p>
 
-                        <a class="btn deff mt-3  text-white p-3" >DONATE <i class="bi bi-arrow-right"></i> </a>
+                      
                     </div>
-                    <div class="col-lg-6">
-                        <div class="rounded overflow-hidden">
-                            <div class="row g-0">
-                                <a  href="donate.html" class="col-sm-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                    <div class="text-center py-5 px-4" style="background: orange;">
-                                        <img class="img-fluid mb-4" src="images/icons/hands.png" alt=""><br>
-                                        <span class="fs-5 fw-bold text-white">Become a volunteer</span>
-                                    </div>
-                                </a>
-                                <a  href="donate.html" class="col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-                                    <div class="text-center py-5 px-4">
-                                        <img class="img-fluid mb-4" src="images/icons/heart.png" alt=""><br>
-                                        <span class="fs-5 fw-bold text-primary">Caring Community</span>
-                                    </div>
-                                </a>
-                                <a  href="donate.html" class="col-sm-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-                                    <div class="text-center py-5 px-4">
-                                        <img class="img-fluid mb-4" src="images/icons/receive.png" alt=""><br>
-                                        <span class="fs-5 fw-bold text-primary">Make a Donation</span>
-                                    </div>
-                                </a>
-                                <a href="donate.html" class="col-sm-6 wow fadeIn" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
-                                    <div class="text-center py-5 px-4" style="background: orange;"  >
-                                        <img class="img-fluid mb-4" src="images/icons/scholarship.png" alt=""><br>
-                                        <span class="fs-5 fw-bold text-white">Family Support</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                   <div class="col-lg-6">
+                    <img src="images/all.png"
+                    class="custom-text-box-image img-fluid" alt=""  data-aos="fade-left">
+
+                   </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid banner mt-5 py-5" data-parallax="scroll" data-image-src="images/all.png" style="background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-sm-4">
-                                <img class="img-fluid rounded" src="images/IMG-20240530-WA0056.jpg" alt="">
-                            </div>
-                            <div class="col-sm-8">
-                                <h2 class="text-white mb-3">VISION</h2>
-                                <p class="text-white mb-4">To empower and encourage parents from under resourced families in Uganda to pursue a Christ-informed and Scripture based life style, while pursuing practical education in order to lead a life of dignity and self reliance.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-sm-4">
-                                <img class="img-fluid rounded" src="images/IMG-20240530-WA0070.jpg" alt="">
-                            </div>
-                            <div class="col-sm-8">
-                                <h2 class="text-white mb-3">MISSION</h2>
-                                <p class="text-white mb-4">To equip under resourced Ugandan parents holistically with spiritual, vocational, and financial resources to realize their potential and discover their worth.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="section-padding section-bg" id="section_2">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                        <img src="images/fam.png"
-                            class="custom-text-box-image img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-
-                        <div class="row">
-
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
-                                    <div class="counter-thumb">
-                                        <div class="d-flex">
-                                            <span class="counter-number" data-from="1" data-to="2009"
-                                                data-speed="1000"></span>
-                                            <span class="counter-number-text"></span>
-                                        </div>
-
-                                        <span class="counter-text">Founded</span>
-                                    </div>
-
-                                    <div class="counter-thumb mt-4">
-                                        <div class="d-flex">
-                                            <span class="counter-number" data-from="1" data-to="120"
-                                                data-speed="1000"></span>
-                                            <span class="counter-number-text">B</span>
-                                        </div>
-
-                                        <span class="counter-text">Donations</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
+       
 <!-- About 1 - Bootstrap Brain Component -->
-<section class="py-3 mt-5">
+<section class="py-3">
     <div class="container">
       <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-        <div class="col-12 col-lg-6 col-xl-7 wow fadeInLeft">
+        <div class="col-12 col-lg-6 col-xl-7">
           <div class="row justify-content-xl-center">
             <div class="col-12 col-xl-11">
-            <p class="section-title bg-white text-start text-primary pe-3">what we do</p>
+
               <h1 class="mb-3">What We Do</h1>
-              <p class="lead fs-6 text-secondary mb-3" style="font-family: sans-serif;">Every year we assess some parents and select those who we qualify for our programme. We then <b> EDUCATE the parents</b> on good life principles like biblical lifestyle such as, Jesus is the only Savior, work is from God and those who don't work should not eat. We also teach them how to run a business and the importance of budgeting. We encourage them to save, instead of spending all the money they make. We encourage them to hope in God and have a vision for their lives so that they can starting seeing themselves as successful and happy.
+              <p class="lead fs-6 mb-3"  data-aos="fade-down" >
+                Every year we assess some parents and select those who we qualify for our programme. We then <span class="fw-bold">EDUCATE</span> the parents on good life principles like biblical lifestyle such as, Jesus is the only Savior, work is from God and those who don't work should not eat. We also teach them how to run a business and the importance of budgeting. We encourage them to save, instead of spending all the money they make. We encourage them to hope in God and have a vision for their lives so that they can starting seeing themselves as successful and happy.
 
               </p>
-              <p style="font-family: sans-serif;">We also <b> EQUIP the parents</b> with vocational skills which they will use to make money. Some are trained in hair dressing, cooking, fixing cars and others. Because of the high unemployment rates in Uganda, we prefer training them to have their own businesses instead of waiting for jobs to come up. After graduation we equip some of the parents with the tools they need to start working and for some of the parents we help them look for jobs.
+              <p data-aos="fade-down" >
+                We also <span class="fw-bold">EQUIP</span> the parents with vocational skills which they will use to make money. Some are trained in hair dressing, cooking, fixing cars and others. Because of the high unemployment rates in Uganda, we prefer training them to have their own businesses instead of waiting for jobs to come up. After graduation we equip some of the parents with the tools they need to start working and for some of the parents we help them look for jobs.
             </p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6 col-xl-5 wow fadeInRight">
-            <img class="img-fluid rounded" loading="lazy" src="images/IMG-20240530-WA0073.jpg" alt="What We do">
+        <div class="col-12 col-lg-6 col-xl-5">
+            <img class="img-fluid rounded" loading="lazy" src="images/wedo.jpeg" alt="About 1"  data-aos="fade-left">
           </div>
-          <p class="mx-4 wow fadeInUp" style="font-family: sans-serif;">We believe that <b>GOOD HEALTH</b>  is vital in the pursuit of earning an increased income and improving wellbeing, so during this period we check the health status of the parents and their children. We take them to medical centers where they are treated if they have common illnesses. We also teach them good hygiene and encourage them to go for regular checkups.</p>
+          <p class="mx-4"  data-aos="fade-down">We believe that <span class="fw-bold">GOOD HEALTH</span> is vital in the pursuit of earning an increased income and improving wellbeing, so during this period we check the health status of the parents and their children. We take them to medical centers where they are treated if they have common illnesses. We also teach them good hygiene and encourage them to go for regular checkups.</p>
       </div>
     </div>
   </section>
 
-  <div class="container-fluid pt-5 px-0" id="about">
-    <div class=" pt-5">
+
+
+  <div class="container-xxl ">
+    <div class="container">
         <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
-            <div class="col-md-6 p-0 text-md-right wow fadeInLeft">
-                <div class="h-100 d-flex flex-column bg-white p-5 mx-4">
-                    <h2 class="mb-4 text-black">OUR IMPACT</h2>
-                    <p style="color:#696969;font-family: sans-serif;padding-bottom: 20px ;font-size:19px">Some of the parents whose standard of living has been changed include Kalule, 
+            <div class="col-md-6 p-0 text-md-right">
+                <div class="h-100 d-flex flex-column bg-white p-3">
+                    <h2 class="mb-4 text- text-center">OUR IMPACT</h2>
+                    <p  data-aos="fade-down"style="color:#696969;font-family: sans-serif;padding-bottom: 20px ;font-size:19px">Some of the parents whose standard of living has been changed include Kalule, 
                         who is one of the first parents to join our programme. His life has been transformed 
                         from a public toilet attendant in Katanga slum to a barber.</p>
-                    <a href="#" class="btn text-white p-3">Learn More <i class="bi bi-arrow-right"></i></a>
+                    
                 </div>
             </div>
-            <div class="col-md-6 p-0 wow fadeInRight" style="height: 400px;">
-                <img class=" w-100 h-100" src="images/causes/african-woman-pouring-water-recipient-outdoors.jpg" style="object-fit: cover;">
-            </div>
-        </div>
-        <div class="row m-0">
-            <div class="col-md-6 p-0 wow fadeInLeft" style="min-height: 400px;">
-                <img class="w-100 h-100" src="images/learning.png" style="object-fit: cover;">
-            </div>
-            <div class="col-md-6 p-0 text-md-right wow fadeInRight">
-                <div class="h-100 d-flex flex-column bg-white p-5 mx-4">
-                    <h2 class="mb-4 text-black">OUR STORIES</h2>
-                    <p style="color:#696969;font-family: sans-serif;padding-bottom: 20px;font-size:19px">
-                        Ajambo and Nabukeera have also benefited from 
-                        our vocational training and are now earning more income. Kizza, who has celebral palsy received support from us 
-                        and is now able to support his family. You can read the details of their stories...</p>
-                    <a href="stories.html" class="btn text-white p-3">View Stories <i class="bi bi-arrow-right"></i></a>
-                </div>
+            <div class="col-md-6 p-0" style="height: 400px;">
+                <img class=" w-100 h-100" src="images/learning.png" style="object-fit: cover;"  data-aos="fade-left">
             </div>
         </div>
     </div>
 </div>
 
 
+ 
         <section class="testimonial-section section-padding section-bg">
             <div class="container">
                 <div class="row">
 
                     <div class="col-lg-8 col-12 mx-auto">
-                        <h2 clasFs="mb-lg-3">Happy customers</h2>
+                        <h2 class="mb-lg-3">Testimonies</h2>
 
                         <div id="testimonial-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
 
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="carousel-caption">
-                                        <h4 class="carousel-title">Bazadde Care has truly changed lives, including mine. The support and resources provided have made a remarkable difference in our community.</h4>
+                                        <h4 class="carousel-title">This organization has truly changed lives, including mine. The support and resources provided have made a remarkable difference in our community.</h4>
 
-                                        <small class="carousel-name"><span class="carousel-name-title">Amanda L.</span>,
-                                            Boss</small>
+                                        <small class="carousel-name"><span class="carousel-name-title">Kizza J</span>
+                                            </small>
                                     </div>
                                 </div>
 
                                 <div class="carousel-item">
                                     <div class="carousel-caption">
-                                        <h4 class="carousel-title">I am so grateful for the work Bazadde Care does. Their dedication to helping those in need is inspiring and has a real impact on the lives of so many.</h4>
+                                        <h4 class="carousel-title">I am deeply grateful for the incredible work that Bazadde Care does. Their dedication to helping those in need is truly inspiring, and it has a profound impact on the lives of countless individuals.</h4>
 
-                                        <small class="carousel-name"><span class="carousel-name-title">Thomas M.</span>,
-                                            Partner</small>
+                                        <small class="carousel-name"><span class="carousel-name-title">Ajambo.</span>
+                                            </small>
                                     </div>
                                 </div>
 
                                 <div class="carousel-item">
                                     <div class="carousel-caption">
-                                        <h4 class="carousel-title">The compassion and commitment of Bazadde Care are unparalleled. They have provided invaluable assistance and hope to countless individuals.</h4>
+                                        <h4 class="carousel-title">The compassion and unwavering commitment of Bazadde Care are truly unparalleled. They have selflessly provided invaluable assistance, restoring hope to countless individuals in need.</h4>
 
-                                        <small class="carousel-name"><span class="carousel-name-title"> Maria S.</span>,
-                                            Advisor</small>
+                                        <small class="carousel-name"><span class="carousel-name-title"> Maria S.</span>
+                                            </small>
                                     </div>
                                 </div>
 
                                 <div class="carousel-item">
                                     <div class="carousel-caption">
-                                        <h4 class="carousel-title">Thanks to  Bazadde Care, I have seen firsthand the positive changes in our neighborhood. Their programs are effective and their team genuinely cares.</h4>
+                                        <h4 class="carousel-title">Thanks to Bazadde Care, I have had the privilege of witnessing the transformative impact they've had on our neighborhood. Their programs are remarkably effective, and their team is comprised of individuals who genuinely care about the well-being of our community.</h4>
 
-                                        <small class="carousel-name"><span class="carousel-name-title"> John P</span>,
-                                            Entreprenuer</small>
+                                        <small class="carousel-name"><span class="carousel-name-title">Nabukeera M</span>
+                                            </small>
                                     </div>
                                 </div>
 
-                                <ol class="carousel-indicators">
-                                    <li data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active">
-                                        <img src="images/IMG-20240530-WA0065.jpg"
-                                            class="img-fluid rounded-circle avatar-image" alt="avatar">
-                                    </li>
-
-                                    <li data-bs-target="#testimonial-carousel" data-bs-slide-to="1" class="">
-                                        <img src="images/IMG-20240530-WA0053.jpg"
-                                            class="img-fluid rounded-circle avatar-image" alt="avatar">
-                                    </li>
-
-                                    <li data-bs-target="#testimonial-carousel" data-bs-slide-to="2" class="">
-                                        <img src="images/IMG-20240530-WA0066.jpg"
-                                            class="img-fluid rounded-circle avatar-image" alt="avatar">
-                                    </li>
-
-                                    <li data-bs-target="#testimonial-carousel" data-bs-slide-to="3" class="">
-                                        <img src="images/IMG-20240530-WA0052.jpg"
-                                            class="img-fluid rounded-circle avatar-image" alt="avatar">
-                                    </li>
-                                </ol>
+            
 
                             </div>
                         </div>
@@ -403,19 +277,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-12 mb-4">
-                    <img src="images/logo.jpg" class="logo img-fluid" alt="">
+                    <img src="images/logo.jpg" class="logo img-fluid rounded" alt="">
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
                     <h5 class="site-footer-title mb-3">Quick Links</h5>
 
                     <ul class="footer-menu">
-                        <li class="footer-menu-item"><a href="stories.html" class="footer-menu-link">Our Story</a></li>
+                        <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">Updates</a></li>
 
                        
                         <li class="footer-menu-item"><a href="works.html" class="footer-menu-link">Works</a></li>
 
-                        <li class="footer-menu-item"><a href="index.html#volunteer" class="footer-menu-link">Become a volunteer</a></li>
+                        <li class="footer-menu-item"><a href="about.html#volunteer" class="footer-menu-link">Become a volunteer</a></li>
 
                         
                     </ul>
@@ -445,7 +319,7 @@
                         Buddu House, Bombo Rd
                     </p>
 
-                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                    <a href="contact.html" class="custom-btn btn mt-3 rounded">Get Direction</a>
                 </div>
             </div>
         </div>
@@ -467,17 +341,13 @@
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/wow/wow.min.js"></script>
     <script src="js/click-scroll.js"></script>
     <script src="js/counter.js"></script>
-    
-    
-    <script src="js/parallax.min.js"></script>
-    <script src="js/easing/easing.min.js"></script>
     <script src="js/custom.js"></script>
-    
+    <script src="js/parallax.min.js"></script>
 </body>
 
 </html>

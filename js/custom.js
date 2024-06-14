@@ -1,10 +1,7 @@
 
   (function ($) {
-  
+    AOS.init();
   "use strict";
-
-    // Initiate the wowjs
-    new WOW().init();
 
     // COUNTER NUMBERS
     jQuery('.counter-thumb').appear(function() {
@@ -19,6 +16,17 @@
 
     scrollToDiv(elWrapped,header_height);
     return false;
+
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get the "About" main link element
+      var aboutMainLink = document.querySelector('.nav-item.dropdown .nav-link');
+
+      // Add a click event listener to the "About" main link
+      aboutMainLink.addEventListener('click', function(event) {
+          // Navigate to the "about.html" page
+          window.location.href = aboutMainLink.getAttribute('href');
+      });
+  });
 
     function scrollToDiv(element,navheight){
       var offset = element.offset();

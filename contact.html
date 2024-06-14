@@ -7,7 +7,6 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/favicon.png">
 
     <title>Bazadde care</title>
 
@@ -15,33 +14,16 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   
 
 </head>
 
-<body id="section_1">
-    <div class="container-fluid px-0 topn">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href="https://www.facebook.com/HLK.familyempowerment/"><i class="bi bi-facebook"></i></a>
-                    <a class="btn btn-link text-light" href="https://www.youtube.com/watch?app=desktop&v=4aYRezpAPL8"><i class="bi bi-youtube"></i></a>
-                    <a class="btn btn-link text-light" href="https://www.instagram.com/HLKBAZADDECare"><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 d-inline-flex align-items-center text-white py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="bi bi-telephone me-2"></i>Call Us:</span>
-                    <a href="tell:+256772433957" class="text-white">+256 772 433957</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<body >
+
     <header >
-        <nav class="navbar navbar-expand-lg shadow-lg">
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="images/logo.jpg" class="logo img-fluid" alt="Kind Heart Charity">
@@ -56,29 +38,40 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
     
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link click-scroll dropdown-toggle" href="about.html"
+                                id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">About</a>
+    
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="about.html#volunteer">Volunteer</a></li>
+    
+                                
+                            </ul>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link " href="about.html">About</a>
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link " href="works.html">Our works</a>
+                            <a class="nav-link " href="works.html">Our work</a>
                         </li>
     
                         <li class="nav-item">
-                            <a class="nav-link " href="stories.html">Stories</a>
+                            <a class="nav-link " href="news.html">Update</a>
                         </li>
     
                        
     
                         <li class="nav-item">
-                            <a class="nav-link " href="contact.html">Contact</a>
+                            <a class="nav-link active" href="contact.html">Contact</a>
                         </li>
     
                         <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>
+                            <a class="nav-link custom-border-btn btn donate rounded" href="https://faithandlearning.org/projects/hlk-bazadde-care/#donor-form">Donate</a>
                         </li>
                     </ul>
                 </div>
@@ -88,24 +81,12 @@
     <main>
 
 
-        <section class="breadcrumb b-contact text-center">
-            <div class="section-overlay"></div>
-
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12">
-                        <h1 class="text-white">Contact</h1>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+   
 
 
 
 
-        <section class="contact-section section-padding" id="section_6">
+        <section class="contact-section py-2" >
             <div class="container">
                 <div class="row">
 
@@ -124,11 +105,21 @@
                                 </p>
 
                                 <p class="d-flex mb-2">
-                                    <i class="bi-telephone me-2"></i>
+                                    
 
-                                    <a href="tel: 256772433957">
-                                        256 7724 33957
+                                    <div>
+                                      <i class="bi-telephone me-2"></i>   UGANDA CONTACT
+                                       <a href="tel: 256772433957">
+                                            +256772433957
+                                        </a>
+                                    </div>
+                                     <br/>
+                                    <div>
+                                   <i class="bi-telephone me-2"></i>  USA CONTACT
+                                    <a href="tel: 17085679114">
+                                        +1 708 5679114
                                     </a>
+                                </div>
                                 </p>
 
                                 <p class="d-flex">
@@ -139,32 +130,26 @@
                                     </a>
                                 </p>
 
-                                <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                             
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-5 col-12 mx-auto">
-                        <form class="custom-form contact-form" action="#" method="post" role="form">
+                        <form class="custom-form contact-form" action="cont.php" method="post" role="form">
                             <h2>Contact form</h2>
 
-                            <p class="mb-4">Or, you can just send an email:
-                                <a href="#">info@charity.org</a>
-                            </p>
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-12 col-md-6 col-12">
                                     <input type="text" name="first-name" id="first-name" class="form-control"
-                                        placeholder="Jack" required>
+                                        placeholder="Name" required>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="last-name" id="last-name" class="form-control"
-                                        placeholder="Doe" required>
-                                </div>
+                                
                             </div>
 
                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                                placeholder="Jackdoe@gmail.com" required>
+                                placeholder="your@gmail.com" required>
 
                             <textarea name="message" rows="5" class="form-control" id="message"
                                 placeholder="What can we help you?"></textarea>
@@ -187,19 +172,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-12 mb-4">
-                    <img src="images/logo.jpg" class="logo img-fluid" alt="">
+                    <img src="images/logo.jpg" class="logo img-fluid rounded" alt="">
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
                     <h5 class="site-footer-title mb-3">Quick Links</h5>
 
                     <ul class="footer-menu">
-                        <li class="footer-menu-item"><a href="stories.html" class="footer-menu-link">Our Story</a></li>
+                        <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">Updates</a></li>
 
                        
                         <li class="footer-menu-item"><a href="works.html" class="footer-menu-link">Works</a></li>
 
-                        <li class="footer-menu-item"><a href="index.html#volunteer" class="footer-menu-link">Become a volunteer</a></li>
+                        <li class="footer-menu-item"><a href="about.html#volunteer" class="footer-menu-link">Become a volunteer</a></li>
 
                         
                     </ul>
@@ -229,7 +214,7 @@
                         Buddu House, Bombo Rd
                     </p>
 
-                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                    <a href="contact.html" class="custom-btn btn mt-3 rounded">Get Direction</a>
                 </div>
             </div>
         </div>
@@ -251,6 +236,7 @@
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/click-scroll.js"></script>

@@ -1,41 +1,37 @@
-
-
-
-
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Metropolis';
+  src: url('../fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
+      url('../fonts/Metropolis/Metropolis-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Metropolis';
+  src: url('../fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
+      url('../fonts/Metropolis/Metropolis-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Metropolis';
+  src: url('../fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+      url('../fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
-        url('../fonts/Metropolis/Metropolis-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Metropolis';
+  src: url('../fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
+      url('../fonts/Metropolis/Metropolis-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 /*---------------------------------------
@@ -43,7 +39,7 @@
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                orange;
+  --primary-color:                #52c2c8;
   --secondary-color:              #0f4861;
   --section-bg-color:             #f0f8ff;
   --site-footer-bg-color:         #0E4760;
@@ -54,7 +50,7 @@
   --border-color:                 #e9eaeb;
 
   --body-font-family:             'Metropolis', sans-serif;
-
+  
   --h1-font-size:                 52px;
   --h2-font-size:                 46px;
   --h3-font-size:                 32px;
@@ -77,11 +73,10 @@
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family);
-  overflow-x: hidden; 
+  font-family: var(--body-font-family); 
 }
 
-
+.sec{padding-top:50px!important;}
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -134,7 +129,7 @@ h6 {
 }
 
 p {
-  color: var(--p-color);
+  color: var(--dark-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
 }
@@ -165,13 +160,29 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+/* hero img */
+.about {
 
+  background-image: url('../images/about.jpeg');
+}
+.cont {
+
+  background-image: url('../images/bg.png');
+}
+.new {
+
+  background-image: url('../images/bg.png');
+}
+.work {
+
+  background-image: url('../images/work.jpeg');
+}
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
 .section-padding {
   padding-top: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .section-bg {
@@ -215,7 +226,7 @@ strong {
 .custom-block-image {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 55vh;
   object-fit: cover;
 }
 
@@ -371,20 +382,14 @@ strong {
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
-.topn{
-  background-color: var(--secondary-color);
-}
-.topn .text-end div{
-  background-color: var(--primary-color);
-}
 .navbar {
-  background-color: white;
+  background: white!important;
   z-index: 9;
   padding-top: 0;
   padding-bottom: 0;
   height: 100px;
 }
-
+header{ background-color: white!important;}
 .navbar .container{
   background-color: #fff;
 }
@@ -592,28 +597,14 @@ strong {
   font-family: Sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: var(--primary-color)!important;
+  background-color: var(--primary-color);
   width: max-content;
   border-radius: 3px;
-  transition: .3s ease-in-out;
-}
-.nav-link.btn:hover{
-  border: 2px solid #fff;
-  background-color: var(--primary-color);
-  color: #fff!important;
 }
 #about .btn i,
 .deff i{
   margin-left: 4px;
   font-size: 18px;
-  transition: .3s ease-in-out;
-}
-#about .btn:hover i,
-.deff:hover i{
-  margin-left: 10px;
-}
-b{
-  color: #000;
 }
 /*---------------------------------------
   SITE HEADER              
@@ -776,46 +767,8 @@ b{
 .custom-text-block {
   padding: 60px 40px;
 }
-.about-experience {
-  position: absolute;
-  width: 80%;
-  height: 100%;
-  right: -45px;
-  bottom: -45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  color: #fff;
-}
-.about-experience h1{  font-family: 'monospace';
-  font-weight: 600;
-}
-.aboutimgs .col-12{  position: relative;
-}
-.aboutimgs label{
-  position: absolute;
-  right: 30px;
-  left: 30px;
-  top: 72%;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 30px 20px;
-  font-weight: 600;
-  border-radius: 13px;
-  border: 2px solid #fff;
-  opacity: .9;
-  /* transform: translate(-110%,10%); */
-}
-.aboutimgs .col-12:first-child label{
-  font-size: 15px;
-}
-@media screen and (max-width: 768px) {
-  .aboutimgs .col-12{
-    padding-top: 30px;
-  }
-}
+
+
 /*---------------------------------------
   COUNTER NUMBERS              
 -----------------------------------------*/
@@ -850,7 +803,7 @@ b{
 
 .volunteer-section::after {
   content: "";
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   border-radius: 50%;
   position: absolute;
   bottom: -110px;
@@ -909,7 +862,8 @@ b{
 /*---------------------------------------
   NEWS         
 -----------------------------------------*/
-.breadcrumb {
+.news-detail-header-section {
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -917,25 +871,11 @@ b{
   padding-top: 150px;
   padding-bottom: 150px;
 }
-.b-about{
-  background-image: url('../images/IMG-20240530-WA0078.jpg');
-}
-.b-stories{
-  background-image: url('../images/IMG-20240530-WA0051.jpg');
-}
-.b-works{
-  background-image: url('../images/IMG-20240530-WA0058.jpg');
-  background-position: 100% 30%;
-}
-.b-contact{
-  background-image: url('../images/bg.png');
-}
 
 .news-block-top {
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
-  width: max-content;
 }
 
 .news-block-two-col-image-wrap {
@@ -968,7 +908,7 @@ b{
 .news-block-title-link {
   color: var(--dark-color);
 }
-
+.block{color: #000000!important;}
 .news-detail-image {
   display: block;
   border-radius: var(--border-radius-medium);
@@ -1138,9 +1078,7 @@ blockquote::before {
   left: 10px;
 }
 
-#testimonial-carousel .carousel-title {
-  quotes: "“" "”" "‘" "’";
-}
+
 
 #testimonial-carousel .carousel-name {
   background: var(--primary-color);
@@ -1166,6 +1104,7 @@ blockquote::before {
 
 .carousel-name-title {
   font-weight: var(--font-weight-semibold);
+  color: black !important;
 }
 
 #testimonial-carousel .carousel-indicators {
@@ -1623,7 +1562,7 @@ blockquote::before {
     height: 60px;
   }
 
-  .breadcrumb {
+  .news-detail-header-section {
     padding-top: 100px;
     padding-bottom: 100px;
   }
