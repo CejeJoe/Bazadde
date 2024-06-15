@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $email_subject, $email_body, $headers);
 
     // Redirect to a thank you page or display a thank you message
-    header('Location: index.php');
+    header('Location: index.html');
     exit;
 }
 ?>
