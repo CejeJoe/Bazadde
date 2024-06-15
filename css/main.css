@@ -382,6 +382,12 @@ strong {
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
+.topn{
+  background-color: var(--secondary-color);
+}
+.topn .text-end div{
+  background-color: var(--primary-color);
+}
 .navbar {
   background: white!important;
   z-index: 9;
