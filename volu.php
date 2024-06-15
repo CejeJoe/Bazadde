@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email address where you want to receive the form submissions
-     $to = 'francis.hopeforlife@gmail.com';
+     $to = 'cedricallan16@gmail.com';
     //  $to = 'cedricallan16@gmail.com';
 
     // Email subject

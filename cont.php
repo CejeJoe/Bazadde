@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Email address where you want to receive the form submissions
-     $to = 'francis.hopeforlife@gmail.com';
+     $to = 'cedricallan16@gmail.com';
     // $to = 'cedricallan16@gmail.com';
     // Email subject
     $email_subject = 'New Contact Form Submission';
